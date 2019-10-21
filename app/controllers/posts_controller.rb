@@ -14,6 +14,6 @@ class PostsController < ApplicationController
   # add create method here
   def create
     post = Post.new
-    post.title
+    post.title = params[:title]
   end
 end
